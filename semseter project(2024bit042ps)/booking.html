@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elizabeth Skin Healthcare - Booking</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight">Elizabeth</span> Skin Healthcare</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li class="current"><a href="booking.html">Booking</a></li>
+          <li><a href="information.html">Information</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="main">
+    <div class="container">
+      <h2>Book Your Appointment</h2>
+      <p>Welcome to our booking platform. Please log in or create an account to schedule your skincare appointment.</p>
+
+      <div class="auth-section">
+        <div class="auth-forms">
+          <div class="form-container">
+            <h3>Login</h3>
+            <form id="login-form">
+              <label for="login-email">Email:</label>
+              <input type="email" id="login-email" name="login-email" required />
+              <label for="login-password">Password:</label>
+              <input type="password" id="login-password" name="login-password" required />
+              <button type="submit" class="button">Login</button>
+            </form>
+          </div>
+
+          <div class="form-container">
+            <h3>Create Account</h3>
+            <form id="signup-form">
+              <label for="signup-name">Full Name:</label>
+              <input type="text" id="signup-name" name="signup-name" required />
+              <label for="signup-email">Email:</label>
+              <input type="email" id="signup-email" name="signup-email" required />
+              <label for="signup-password">Password:</label>
+              <input type="password" id="signup-password" name="signup-password" required />
+              <button type="submit" class="button">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="booking-section">
+        <h3>Appointment Details</h3>
+        <form id="booking-form">
+          <label for="service">Select Service:</label>
+          <select id="service" name="service" required>
+            <option value="">--Please choose an option--</option>
+            <option value="acne-clear">Acne Clear System</option>
+            <option value="even-tone">Even Tone Serum</option>
+            <option value="shea-butter">Shea Butter Moisturizer</option>
+            <option value="tea-tree">Tea Tree Cleanser</option>
+            <option value="sun-defense">Sun Defense SPF 50</option>
+            <option value="eczema-relief">Eczema Relief Cream</option>
+          </select>
+
+          <label for="date">Preferred Date:</label>
+          <input type="date" id="date" name="date" required />
+
+          <label for="time">Preferred Time:</label>
+          <input type="time" id="time" name="time" required />
+
+          <button type="submit" class="button">Confirm Booking</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Elizabeth Skin Healthcare &copy; 2025</p>
+    </div>
+  </footer>
+</body>
+</html>
